@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ncvt.FaceRecognitionWithOpenCvSharp", "Ncvt.FaceRecognitionWithOpenCvSharp\Ncvt.FaceRecognitionWithOpenCvSharp.csproj", "{0B18E929-C9F7-453C-BA41-62C6D328F96A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FROCS.Core", "FROCS.Core\FROCS.Core.csproj", "{B7066709-66DD-407C-BDEE-AF36AC283BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FROCS.EntityFramework", "FROCS.EntityFramework\FROCS.EntityFramework.csproj", "{4C6B8DF1-9262-4CE1-BA98-5729ED6AD4B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FROCS.Application", "FROCS.Application\FROCS.Application.csproj", "{FBBD2597-6F70-4FC0-9A91-2B8B1CADE8AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B18E929-C9F7-453C-BA41-62C6D328F96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B18E929-C9F7-453C-BA41-62C6D328F96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B18E929-C9F7-453C-BA41-62C6D328F96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B18E929-C9F7-453C-BA41-62C6D328F96A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7066709-66DD-407C-BDEE-AF36AC283BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7066709-66DD-407C-BDEE-AF36AC283BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7066709-66DD-407C-BDEE-AF36AC283BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7066709-66DD-407C-BDEE-AF36AC283BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C6B8DF1-9262-4CE1-BA98-5729ED6AD4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C6B8DF1-9262-4CE1-BA98-5729ED6AD4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C6B8DF1-9262-4CE1-BA98-5729ED6AD4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C6B8DF1-9262-4CE1-BA98-5729ED6AD4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBBD2597-6F70-4FC0-9A91-2B8B1CADE8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBBD2597-6F70-4FC0-9A91-2B8B1CADE8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBBD2597-6F70-4FC0-9A91-2B8B1CADE8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBD2597-6F70-4FC0-9A91-2B8B1CADE8AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6595D79-2D8F-4911-83B7-4B4D8366E5A6}
+	EndGlobalSection
+EndGlobal
