@@ -41,7 +41,7 @@ namespace Ncvt.FaceRecognitionWithOpenCvSharp
         private List<PersonFace> _cache;        // 返回所有人脸集合
         private static Bitmap _frameImage;      // 显示到视频监视区的图像
 
-        private bool _rotateFlip = true;         // 是否左右翻转画面，摄像头设为true, 视频设为 false 
+        private bool _rotateFlip = true;         // 是否左右翻转画面，摄像头设为true, 视频设为false 
 
 
         //private static Mat _receivedImage;
