@@ -30,7 +30,7 @@ namespace Ncvt.FaceRecognitionWithOpenCvSharp
         private bool _isRunning = false;           // 运行状态
         private VideoCapture _capture;             // 视频采集设备
         private static Mat _receivedImage; //      // 接收到的图像
-        private readonly long _fps = 1000 / 30;    // 画面每秒传输帧数，1000毫秒（1秒）
+        private readonly long _fps = 1000 / 30;    // 画面每秒传输帧数， 1000毫秒（1秒）
 
         private Task _run;                      // 用于运行视频采集及图像处理线程
         private bool _shouldShot;               // 是否从视频中捕捉人脸添加到人脸库
