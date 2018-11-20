@@ -49,13 +49,15 @@
             // 
             // msMain
             // 
+            this.msMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.msMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.tsmiVideoCapture,
             this.tsmiFaceLibrary});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
-            this.msMain.Size = new System.Drawing.Size(877, 25);
+            this.msMain.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.msMain.Size = new System.Drawing.Size(1169, 28);
             this.msMain.TabIndex = 1;
             this.msMain.Text = "menuStrip1";
             // 
@@ -67,31 +69,31 @@
             this.toolStripMenuItem2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(39, 21);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.fileToolStripMenuItem.Text = "文件";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.openToolStripMenuItem.Text = "Open Video File";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.openToolStripMenuItem.Text = "打开视频文件";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.closeToolStripMenuItem.Text = "Close Video File";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.closeToolStripMenuItem.Text = "关闭视频文件";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(166, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(213, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitToolStripMenuItem.Text = "退出";
             // 
             // tsmiVideoCapture
             // 
@@ -100,27 +102,27 @@
             this.tsmiStop,
             this.toolStripMenuItem1});
             this.tsmiVideoCapture.Name = "tsmiVideoCapture";
-            this.tsmiVideoCapture.Size = new System.Drawing.Size(100, 21);
-            this.tsmiVideoCapture.Text = "VideoCapture";
+            this.tsmiVideoCapture.Size = new System.Drawing.Size(66, 24);
+            this.tsmiVideoCapture.Text = "摄像头";
             // 
             // tsmiStart
             // 
             this.tsmiStart.Name = "tsmiStart";
-            this.tsmiStart.Size = new System.Drawing.Size(180, 22);
-            this.tsmiStart.Text = "Start";
+            this.tsmiStart.Size = new System.Drawing.Size(216, 26);
+            this.tsmiStart.Text = "开始";
             this.tsmiStart.Click += new System.EventHandler(this.tsmiStart_Click);
             // 
             // tsmiStop
             // 
             this.tsmiStop.Name = "tsmiStop";
-            this.tsmiStop.Size = new System.Drawing.Size(180, 22);
-            this.tsmiStop.Text = "Stop";
+            this.tsmiStop.Size = new System.Drawing.Size(216, 26);
+            this.tsmiStop.Text = "停止";
             this.tsmiStop.Click += new System.EventHandler(this.tsmiStop_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(213, 6);
             // 
             // tsmiFaceLibrary
             // 
@@ -128,52 +130,56 @@
             this.tsmiAddFaceFromVideo,
             this.tsmiAddFaceFromPhoto});
             this.tsmiFaceLibrary.Name = "tsmiFaceLibrary";
-            this.tsmiFaceLibrary.Size = new System.Drawing.Size(86, 21);
-            this.tsmiFaceLibrary.Text = "FaceLibrary";
+            this.tsmiFaceLibrary.Size = new System.Drawing.Size(66, 24);
+            this.tsmiFaceLibrary.Text = "人脸库";
             // 
             // tsmiAddFaceFromVideo
             // 
             this.tsmiAddFaceFromVideo.Name = "tsmiAddFaceFromVideo";
-            this.tsmiAddFaceFromVideo.Size = new System.Drawing.Size(190, 22);
-            this.tsmiAddFaceFromVideo.Text = "AddFaceFromVideo";
+            this.tsmiAddFaceFromVideo.Size = new System.Drawing.Size(216, 26);
+            this.tsmiAddFaceFromVideo.Text = "从摄像头添加";
             this.tsmiAddFaceFromVideo.Click += new System.EventHandler(this.tsmiAddFaceFromVideo_Click);
             // 
             // tsmiAddFaceFromPhoto
             // 
             this.tsmiAddFaceFromPhoto.Name = "tsmiAddFaceFromPhoto";
-            this.tsmiAddFaceFromPhoto.Size = new System.Drawing.Size(190, 22);
-            this.tsmiAddFaceFromPhoto.Text = "AddFaceFromPhoto";
+            this.tsmiAddFaceFromPhoto.Size = new System.Drawing.Size(216, 26);
+            this.tsmiAddFaceFromPhoto.Text = "从图片添加";
             this.tsmiAddFaceFromPhoto.Click += new System.EventHandler(this.tsmiAddFaceFromPhoto_Click);
             // 
             // picVideoImage
             // 
-            this.picVideoImage.Location = new System.Drawing.Point(12, 28);
+            this.picVideoImage.Location = new System.Drawing.Point(16, 35);
+            this.picVideoImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picVideoImage.Name = "picVideoImage";
-            this.picVideoImage.Size = new System.Drawing.Size(592, 442);
+            this.picVideoImage.Size = new System.Drawing.Size(789, 552);
             this.picVideoImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picVideoImage.TabIndex = 2;
             this.picVideoImage.TabStop = false;
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 473);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 597);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(877, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1169, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 495);
+            this.ClientSize = new System.Drawing.Size(1169, 619);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.picVideoImage);
             this.Controls.Add(this.msMain);
             this.MainMenuStrip = this.msMain;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "人脸识别";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.msMain.ResumeLayout(false);
             this.msMain.PerformLayout();

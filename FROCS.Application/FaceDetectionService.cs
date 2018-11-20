@@ -177,7 +177,11 @@ namespace FROCS.Application
         /// <returns></returns>
         public FindPersonFaceResult FindPersonFaceByFeatureFirstOrDefault(Feature feature)
         {
-            return FindPersonFaceByFeature(feature).FirstOrDefault();
+            if (FindPersonFaceByFeature(feature) != null)
+            {
+                return FindPersonFaceByFeature(feature).FirstOrDefault();
+            }
+            return null;
         }
 
         /// <summary>
