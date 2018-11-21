@@ -169,7 +169,6 @@ namespace Ncvt.FaceRecognitionWithOpenCvSharp
             ffp.Dispose();
         }
 
-
         private void tsmiStart_Click(object sender, EventArgs e)
         {
             StartVideoCapture(_currentCameraIndex);
@@ -180,7 +179,7 @@ namespace Ncvt.FaceRecognitionWithOpenCvSharp
 
         private void tsmiStop_Click(object sender, EventArgs e)
         {
-
+            StopVideoCaptrue(_currentCameraIndex);
             tsmiStart.Enabled = true;
             tsmiStop.Enabled = false;
             tsmiAddFaceFromVideo.Enabled = false;
@@ -214,6 +213,22 @@ namespace Ncvt.FaceRecognitionWithOpenCvSharp
             tsmiStart.Enabled = false;
             tsmiStop.Enabled = true;
 
+        }
+
+        private void StopVideoCaptrue(int camIndex = 0)
+        {
+            if (_isRunning)
+            {
+                _isRunning = false;
+                if (_run != null)
+                {
+                    _run.Wait();
+                    _run.Dispose();
+                }
+                _capture.Dispose();
+                _cache.Clear();
+            }
+            picVideoImage.Image = null;
         }
 
         /// <summary>
